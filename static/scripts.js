@@ -1,9 +1,9 @@
-// $(window.document).ready(function(){ blablabla }
 window.onload=function(){
 	
 	// Funções do slideshow
 	$('#imagens').cycle({
 		fx:'scrollHorz',
+
 		prev:"#prev",
 		next:"#next",
 		pager:"#imgpager",
@@ -31,20 +31,29 @@ window.onload=function(){
 		var nome = $('input[name=nome]').val();
 		var email = $('input[name=email]').val();
 		var mensagem = $('textarea').val();
+		emailOK = true;
 		var valido = true;
 
+		var atpos=email.indexOf("@");
+		var dotpos=email.lastIndexOf(".");
+
 		if(nome =='' || nome ==null){
-			$("#alerta1").html('Porfavor, informe seu nome').slideDown();
+			$("#alerta1").html('Por favor, informe seu nome.').slideDown();
 			valido = false;
 			
 		}
 		if(email =='' || email ==null){
-			$("#alerta2").html('Campo \'e-mail\' deve ser preenchido').slideDown();
+			$("#alerta2").html('Campo \'e-mail\' deve ser preenchido.').slideDown();
 			valido = false;
+			emailOK = false;
 			
 		}
+		if ((atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) && emailOK){
+			$("#alerta2").html('Campo \'e-mail\' inválido.').slideDown();
+		  	valido = false;
+		}
 		if(mensagem =='' || mensagem ==null){
-			$("#alerta3").html('Campo \'mensagem\' deve ser preenchido').slideDown();
+			$("#alerta3").html('Campo \'mensagem\' deve ser preenchido.').slideDown();
 			valido = false;
 			
 		}
@@ -59,14 +68,23 @@ window.onload=function(){
 		var nome = $('input[name=nomenews]').val();
 		var email = $('input[name=emailnews]').val();
 		var valido = true;
+		emailOK = true;
+
+		var atpos=email.indexOf("@");
+		var dotpos=email.lastIndexOf(".");
 
 		if(nome =='' || nome ==null){
-			$("#alertanome").html('Porfavor, informe seu nome').slideDown();
+			$("#alertanome").html('Por favor, informe seu nome.').slideDown();
 			valido = false;
 		}
 		if(email =='' || email ==null){
-			$("#alertaemail").html('Campo \'e-mail\' deve ser preenchido').slideDown();
+			$("#alertaemail").html('Campo \'e-mail\' deve ser preenchido.').slideDown();
 			valido = false;
+			emailOK = false;
+		}
+		if ((atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) && emailOK){
+			$("#alertaemail").html('Campo \'e-mail\' inválido.').slideDown();
+		  	valido = false;
 		}
 
 		return valido;
@@ -106,6 +124,11 @@ window.onload=function(){
 			$("#alertaemail").slideUp();
 		}
 	});
-
+	/*
+	Função para ir ao topo
+	$('.toTop').click(function(){
+   		$('html, body').animate({scrollTop:0}, 1000);
+	});
+	*/
 
 }
