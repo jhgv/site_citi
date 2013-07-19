@@ -1,0 +1,196 @@
+@font-face {
+    font-family:Stag light;
+    src: url('fontes/Stag-Light.otf');
+    font-weight:400;
+}
+@font-face{
+	font-family: Stag-Book;
+    src: url('fontes/Stag-Book.otf');
+	font-weight: 400;
+}
+@font-face{
+	font-family: Stag-Medium;
+	src:('fontes/Stag-Medium.otf');
+	font-weight: 400;
+}
+
+#rodape{
+	background: url('imagens/bg6.png');
+}
+#conteudo{
+	font-family: Stag-Medium;
+	margin: 0 auto;
+	padding-top: 130px;
+	width: 840px;
+}
+#contato{
+	float: left;
+	width: 402px;
+
+}
+#contato input{
+	font-family: Stag light;
+	font-size: 18px;
+	width: 400px;
+	height: 25px;
+	display: block;
+	margin: 5 0px;
+	margin-bottom: 15px;
+	border: 1px solid #999;
+	webkit-transition-property: box-shadow;
+	transition-property: box-shadow;
+	webkit-transition-duration: 0.5s, 0.5s;
+    transition-duration: 0.5s, 0.5s;
+}
+#conteudo input:focus,textarea:focus{
+	outline: none !important;
+	border: 1px solid #75BD29;
+	webkit-box-shadow: 0px 0px 8px #75BD29;
+	box-shadow: 0px 0px 8px #75BD29;
+}
+#conteudo input:hover,textarea:hover{
+	outline: none;
+	border: 1px solid #75BD29;
+}
+
+#contato textarea{
+	padding: 0;
+	resize:none;
+	font-family: Stag light;
+	font-size: 18px;
+	width: 400px;
+	height: 153px;
+	display: block;
+	margin: 5 0px;
+	webkit-transition-property: box-shadow;
+	transition-property: box-shadow;
+	webkit-transition-duration: 0.5s, 0.5s;
+    transition-duration: 0.5s, 0.5s;
+	
+}
+#contato legend{
+	font-family: Stag-Book;
+	margin-bottom: 20px;
+	color: #575454;
+	font-size: 19px;
+
+}
+
+#contato button{
+	font-family: Stag-Book;
+	background-color: #828282;
+	border: none;
+	font-size: 20px;
+	color: #DEDEDE;
+	margin: 5 0px;
+	width: 85px;
+	height: 26px;
+	margin-left: 315px;
+}
+
+#contato button:hover{
+	background-color:#75BD29;
+	border: none;
+}
+
+
+#newsletter{
+	float: right;
+	width: 400px;
+}
+#newsletter input{
+	font-family: Stag light;
+	font-size: 18px;
+	width: 400px;
+	height: 25px;
+	display: block;
+	margin: 5 0px;
+	margin-bottom: 15px;
+	border: 1px solid #999;
+	webkit-transition-property: box-shadow;
+	transition-property: box-shadow;
+	webkit-transition-duration: 0.5s, 0.5s;
+    transition-duration: 0.5s, 0.5s;
+
+}
+
+#newsletter textarea{
+	font-family: Stag light;
+	font-size: 18px;
+	width: 400px;
+	height: 153px;
+	display: block;
+	margin: 5 0px;
+}
+#newsletter legend{
+	font-family: Stag-Book;
+	margin-bottom: 20px;
+	color: #575454;
+	font-size: 19px;
+
+}
+
+#newsletter button{
+	background-color: #828282;
+	border: none;
+	font-size: 20px;
+	font-family: Stag-Book;
+	color: #DEDEDE;
+	margin: 5 0px;
+	width: 85px;
+	height: 26px;
+	margin-left: 315px;
+}
+
+#newsletter button:hover{
+	background-color:#75BD29;
+	border: none;
+}
+
+#clear{
+	clear: both;
+}
+
+#mapa{
+	margin: 0 auto;
+	padding-top:30px;
+	width: 840px;
+	height: 419px;
+}
+#mapa iframe{
+	border: 1px solid #999;
+}
+#baixo{
+	margin: 0 auto;
+	width: 402px;
+	padding-bottom: 60px;
+}
+
+/*Parte que fica em baixo do mapa, as fontes estão trocadas*/
+.nomecima{
+	font-family: Stag;
+	font-size: 19px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #575454;
+	text-align: center;
+}
+.nomebaixo{
+	color: #575454;
+	font-size: 18px;
+	text-align: center;
+}
+
+#alertanome,#alertaemail{
+	overflow: hidden;
+	font-size: 14px;
+	font-family: Stag light;
+	color: #FF6666;
+}
+
+#alerta1,#alerta2,#alerta3{
+	font-size: 14px;
+	font-family: Stag light;
+	color: #FF6666;
+	
+}

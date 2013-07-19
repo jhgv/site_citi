@@ -1,0 +1,416 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		
+		<title>CITi</title>
+
+
+		<script type="text/javascript" src="{{STATIC_URL}}jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="{{STATIC_URL}}jquery.cycle.all.js"></script>
+		<script type="text/javascript" src="{{STATIC_URL}}scripts.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css">
+		<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}form.css">
+
+	</head>
+
+<body>
+
+	<div id="linha"></div>
+
+	<div class="conteudo-home">
+	
+	<ul>
+		<div class="conteudo2-home">
+	
+	<li>
+	<div class="missao">
+		<img src="{{STATIC_URL}}imagens/IconeBand.png">
+		<p class="titulo-missao">Missão</p>
+		<p class="texto-missao">Promover o crescimento profissional, estimular a cultura empreededora e satisfazer clientes.</p>
+	</div>
+	</li>
+
+	<li>
+		<div class="borda">
+			<img src="{{STATIC_URL}}imagens/traco.png">
+		</div>
+	</li>
+	
+	<li>
+	<div class="visao">
+		<img src="{{STATIC_URL}}imagens/IconeSonho.png">
+		<p class="titulo-missao">Visão</p>
+		<p class="texto-missao">Ao final de 2014 ser reconhecido no mercado pernambucano de TI pela qualidade de nossos serviços e incetivo aos novos negócios.</p>
+	</div>
+	</li>
+
+	<li>
+		<div class="borda">
+			<img src="{{STATIC_URL}}imagens/traco.png">
+		</div>
+	</li>
+
+	<li>
+	<div class="negocios">
+		<img src="{{STATIC_URL}}imagens/Icone$.png">
+		<p class="titulo-missao">Negócios</p>
+		<p class="texto-missao">Desenvolvimento de soluções com TI, capacitação de pessoas e educação empreendedora.</p>
+	</div>
+	</li>
+
+	<li>
+		<div class="borda">
+			<img src="{{STATIC_URL}}imagens/traco.png">
+		</div>
+	</li>
+
+	<li>
+		<div class="valores">
+		<img src="{{STATIC_URL}}imagens/IconeCora.png">
+		<p class="titulo-missao">Valores</p>
+		<p class="texto-missao" >Foco no cliente;</p>
+		<p class="texto-missao2">Ser estudante, ser profissional</p>
+		<p class="texto-missao2">Criar, Solucionar, Inovar</p>
+		<p class="texto-missao2">Integração;</p>
+		<p class="texto-missao2">Comprometimento e organização pessoal;</p>
+		<p class="texto-missao2">Busca pela Excelência;</p>
+		<p class="texto-missao2">Gostar de Tecnologia da informação.</p>
+
+		</div>
+	</li>
+
+			<div class="foto">
+				<img src="{{STATIC_URL}}imagens/Foto.png">
+			</div>
+		</div>
+		</ul>
+
+
+	</div>
+
+	<div id="linha"></div>
+
+	<div id="sitesesistemas">
+
+		<div id="sitesesistemasmacro">
+			<div class="textoSS">
+				<div class="imgportfolio"> <img src="{{STATIC_URL}}imagens/pc.png"></div>
+				<div >	<h3 class="h3ss"> sites e sistemas</h3>							
+					<p class="pss">O CITi desenvolve excelentes soluções para os seus clientes, primando sempre pela alta qualidade nos serviços prestados e se comprometendo a fornecer tecnologia de ponta em todas as camadas lógicas da aplicação. Sendo assim, o CITi analisa seu ambiente de trabalho e produz uma solução completa, atendendo de forma particular aos requisitos do projeto sem deixar de se preocupar com a simplicidade e usabilidade para os clientes.
+					</p></div>
+			</div>
+
+				<div id="ssmacroslide">
+
+					<div class="setaesquerda" id="prev">
+						<a href=""><img src="{{STATIC_URL}}imagens/seta2.png"></a>
+					</div>
+					<!-- slideshow -->
+					<div id="imagens">
+						{% for slide in slides %}
+							<img src="{{STATIC_URL}}{{slide.imagem}}">
+						{% endfor %}
+						
+					</div>
+					
+					<div class="setadireita" id="next">
+						<a href=""><img src="{{STATIC_URL}}imagens/seta.png"></a>
+					</div>
+
+					<!-- passadores -->
+					<div class="passadores">
+					<ul id="imgpager">
+					</ul>
+					</div>
+						
+				</div>
+			<div id="info">
+				<div class="textoSS">
+						
+					<div class="imgportfolio"><img src="{{STATIC_URL}}imagens/jornada.png"></div>
+					<h3 class="h3ss">jornada de cursos</h3>
+					<p class="pss">Nas Jornadas, o CITi também promove cursos em outras áreas que não a de Tecnologia da Informação, oferecendo oportunidade de qualificação e diferencial no mercado para profissionais de diversos ramos. Contando com a infra-estrutura do Centro de Informática (CIn) da UFPE, os cursos são ministrados em salas confortáveis e equipadas com ar-condicionado e projetores multimídia, também dispondo de um computador por aluno e material de apoio, de acordo com a necessidade do curso. 
+					</p>
+
+				</div>
+
+
+				<div class="textoSS">
+					<div class="imgportfolio"><img src="{{STATIC_URL}}imagens/cursos.png"></div>
+						<h3 class="h3ss">cursos in company</h3>
+					
+					<p class="pss">São cursos elaborados de acordo com a demanda do cliente a fim de capacitar pessoas em tecnologias como, por exemplo, ferramentas do Office, linguagens de programação e programas de edição de imagem. O curso é totalmente personalizável, pois o cliente tem liberdade de escolher, alterar a ementa e definir o local onde o curso será ministrado. O CITi possui experiência de anos em cursos in Company, dispondo assim de um banco de dados com uma grande variedade de ementas de cursos e instrutores capacitados, agilizando o início dos cursos.
+					</p>
+				</div>
+
+				<div class="textoSS">
+					<div class="imgportfolio"><img src="{{STATIC_URL}}imagens/box.png"></div>
+
+						<h3 class="h3ss">citi box</h3>
+						<p class="pss">Para gerir uma empresa, precisamos de ferramentas que auxiliam no trabalho cotidiano. O CITi elaborou um pacote de serviços que auxiliam na elaboração de atas (o Yatta!), troca de feedbacks (a caixa virtual de feedbacks) e um elaborador automático de assinaturas para e-mail (o Signo), adaptáveis a realidade de cada empresa. Para saber mais, entra em contato com a gente!
+						</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="linha"></div>
+
+	<div class="partner">
+		<div id="partnermacro">
+
+			<div class="partnertexto">
+				<p class="txtpartner">O CITi Partner é um programa de educação empreendedora de base que visa conectar os projetos que surgem ainda na graduação ao mercado. O programa favorece aos estudantes um ambiente de co-working, apresentando-os a uma rede de contatos estratégicos para maturar suas ideias e deixá-las prontas para ganhar espaço na sociedade.</p>
+
+				<div id="partnerimagem">
+					<img src="{{STATIC_URL}}imagens/Partner.png">
+
+				</div>
+
+				<div id="textopartner2"><p class="txtpartner">Inicialmente, o CITi Partner atraiu startups da disciplina “projetão” no Centro de Informática (Cin) da Universidade Federal de Pernambuco (UFPE) que passavam por um semestre letivo fomentando suas ideias e negócio, e as mantinham trabalhando, seja através de reuniões periódicas, treinamentos ou eventos e  feiras corporativas. <br><br> 
+				O programa tem trazido alguns prêmios importantes, como o primeiro lugar na categoria Grandes Sonhos – AMBEV, realizado no Encontro Mundial de Empresas Juniores (o JEWC, em inglês), que resultou em dez mil reais em livros para o Cin – UFPE. A partir destes reconhecimentos, o CITI Partner expande seus próximos ciclos para projetos e novos empreendimentos de toda a universidade, abordando cursos das mais diversas  áreas do conhecimento.
+				</p></div>
+			</div>
+
+		</div>
+	</div>			
+	<div id="linha"></div>
+
+	<div class="parceirosej">
+
+		<div class="parcg">
+
+			<div class="parceiro" id="parcbrasil">
+
+				<div class="logo" id="logobrasil">
+
+					<img src="{{STATIC_URL}}imagens/ejbrasil.png">
+
+				</div>
+
+
+				<p class="parc">A Brasil Júnior é o órgão máximo regulador do Movimento Empresa Júnior, atuando para garantir uma cultura de qualidade e de padrão estrutural às empresas juniores. As ações são desenvolvidas por sua diretoria e, em cada estado, por sua federação local. A BJ também trabalha para a integração do Movimento como uma unidade nacional.
+				</p>
+
+			</div>
+
+			<div class="parceiro" id="parfej">
+
+				<div class="logo" id="logofej">
+
+					<img src="{{STATIC_URL}}imagens/ejfej.png">
+
+				</div>
+
+				<p class="parc">A Federação de Empresas Juniores do estado de Pernambuco (FEJEPE) - entidade responsável pelo desenvolvimento, regulamentação e representação das empresas juniores do estado - atua juntamente a órgãos públicos e privados e a sociedade em geral, a fim de fomentar cada vez mais o movimento empresa júnior pernambucano, instância regional do maior movimento brasileiro de fomento a educação empreendedora.
+				</p>
+
+			</div>
+
+		</div>
+
+		<div class="parcp">
+
+			<div class="parceiro" id="parcace">
+
+				<div class="logo" id="logoace">
+
+					<img src="{{STATIC_URL}}imagens/ejace.png">
+
+				</div>
+
+				<p class="parc">A A.C.E. Consultoria é uma empresa júnior de consultoria da UFPE. É formada por estudantes dos cursos de Administração, Ciências Contábeis, Ciências Econômicas, Serviço Social e Secretariado Executivo. A A.C.E é a primeira empresa júnior multidisciplinar do Nordeste.
+				</p>
+
+			</div>
+
+			<div class="parceiro" id="parcfcap">
+
+				<div class="logo" id="logofcap">
+
+					<img src="{{STATIC_URL}}imagens/ejfcap.png">
+
+				</div>
+
+				<p class="parc">A FCAP JR. Consultoria oferece soluções organizacionais ao mercado pernambucano. Consultoria Júnior da FCAP/ UPE, a FCAP JR. é formada exclusivamente por graduandos que desenvolvem projetos e prestam serviços  principalmente para micro e pequenas empresas.
+				</p>
+
+			</div>
+
+		</div>
+
+		<div class="parcp" id="ultimo">
+
+			<div class="parceiro" id="parcethos">
+
+				<div class="logo" id="logoethos">
+
+					<img src="{{STATIC_URL}}imagens/ejethos.png">
+
+				</div>
+
+				<p class="parc">A Ethos Consultoria é a Empresa Júnior do curso de Psicologia da UFPE. Atua no mercado oferecendo serviços de consultoria a micro e pequenas empresas, órgãos públicos e privados, através de soluções em Psicologia Organizacional, na Gestão Estratégica de Pessoas.
+				</p>
+
+			</div>
+
+			<div class="parceiro" id="parcplan">
+
+				<div class="logo" id="logoplan">
+
+					<img src="{{STATIC_URL}}imagens/ejplan.png">
+
+				</div>
+
+				<p class="parc">A Plantur Jr. é formada e gerenciada por alunos do Núcleo de Hotelaria e Turismo da Universidade Federal de Pernambuco e tem em seu portfólio o desenvolvimento de projetos de consultoria e planejamento turísticos e hoteleiros, além da elaboração, promoção e execução de eventos.
+				</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="linha"></div>
+
+	<div class="parceiros">
+
+		<div class="parcg">
+
+			<div class="parceiro" id="parccin">
+
+				<div class="logo" id="logocin">
+
+					<img src="{{STATIC_URL}}imagens/parccin.png">
+
+				</div>
+
+				<p class="parc">O compromisso com a qualidade aliado à competência de um conceituado corpo docente são alguns dos fatores que tornam o Centro de Informática (CIn) - UFPE um dos melhores e maiores centros acadêmicos de tecnologia da América Latina.<br><br>Situado na Universidade Federal de Pernambuco, o CIn tem conquistado reconhecimentos cada vez mais importantes, como o prêmio FINEP de inovação, obtido em 2011 e medalhas na olímpiada mundial de programação.
+				</p>
+
+			</div>
+
+			<div class="parceiro" id="parcufpe">
+
+				<div class="logo" id="logoufpe">
+
+					<img src="{{STATIC_URL}}imagens/parcufpe.png">
+
+				</div>
+
+				<p class="parc">A Universidade Federal de Pernambuco (UFPE) é uma das melhores universidades do País, em ensino (graduação e pós-graduação) e pesquisa científica, sendo a melhor do Norte-Nordeste, segundo avaliações dos Ministérios da Educação (MEC) e de Ciência e Tecnologia (MCT). A UFPE é uma das principais responsáveis pelo fomento da educação e cenário crescente de desenvolvimento do Estado, onde forma profissionais das três áreas do conhecimento. Hoje, a UFPE é referência para toda a comunidade científica nacional.
+				</p>
+
+			</div>
+
+		</div>
+
+		<div class="parcp">
+
+			<div class="parceiro" id="parcpd">
+
+				<div class="logo" id="logopd">
+
+					<img src="{{STATIC_URL}}imagens/parcpd.png">
+
+				</div>
+
+				<p class="parc"> O Porto Digital é resultado do ambiente de inovação que se consolidou em Pernambuco nas últimas décadas. Em uma região atrativa para inovação, instituições, empresas, universidades e governos fomentaram mudanças econômicas e sociais que estão gerando riqueza, emprego e renda.
+				</p>
+
+			</div>
+
+			<div class="parceiro" id="parcbb">
+
+				<div class="logo" id="logobb">
+
+					<img src="{{STATIC_URL}}imagens/parcbb.png">
+
+				</div>
+
+				<p class="parc">Em uma parceria formada no início de 2013, o CITi, o Centro de Informática e a BlackBerry deram vida ao segundo Tech Center BlackBerry do Brasil, composto por onze desenvolvedores em uma equipe multidisciplinar  voltada ao desenvolvimento de aplicativos para a plataforma.
+				</p>
+
+			</div>
+
+		</div>
+
+		<div class="parcp" id="ultimo">
+
+			<div class="parceiro" id="parcpmi">
+
+				<div class="logo" id="logopmi">
+
+					<img src="{{STATIC_URL}}imagens/parcpmi.png">
+
+				</div>
+
+				<p class="parc">O PMI é a maior associação sem fins lucrativos do mundo para profissionais de gerenciamento de projetos, com mais de meio milhão de associados e de Profissionais Certificados em 185 países.
+				</p>
+
+			</div>
+
+			<div class="parceiro" id="parcludo">
+
+				<div class="logo" id="logoludo">
+
+					<img src="{{STATIC_URL}}imagens/parcludo.png">
+
+				</div>
+
+				<p class="parc">Ludo Cursos é uma empresa formada por membros que saíram do CITi e atuam na área de cursos educacionais, nas áreas de gestão, mídias sociais, negócios e tecnologias.
+				</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div id="linha"></div>
+
+	<div id="rodape">
+		<div id="conteudo">
+			<div id="contato">
+				<form method="POST" action="#rodape" novalidate>
+					{% csrf_token %}
+			        <legend>Entre em contato conosco</legend>
+
+			        <div id="alerta1"></div>
+			        <input type="text" placeholder="nome" name='nome'>
+			         <div id="alerta2"></div>
+			        <input type="email" placeholder="e-mail" name='email'>
+			         <div id="alerta3"></div>
+			        <textarea class="areatextbox" rows="10" cols="45" placeholder="mensagem" name='mensagem'></textarea>
+			        <button id="btn1" type="submit" name="contato">enviar</button>
+				</form>
+			</div>
+
+			<div id="newsletter">
+				<form  method="POST"  action="#rodape">
+					{% csrf_token %}
+			        <legend>Quer receber nossa newsletter?</legend>
+
+			        <div id="alertanome"></div>
+			        <input type="text" placeholder="nome" name='nomenews'>
+			        <div id="alertaemail"></div>
+			        <input type="email" placeholder="e-mail" name='emailnews'>
+			        <button id="btn2" type="submit" name="newsletter">enviar</button>
+			        
+				</form>	
+			</div>
+			<div id="clear"></div>
+		</div>
+
+		<div id="mapa">
+			<iframe width="840" scrolling="no" height="419" frameborder="0" src="http://maps.google.com.br/maps?f=q&source=s_q&hl=pt-br&geocode=&q=Av.+Jornalista+Anibal+Fernandes,+s%2Fn+-+Cidade+Universit%C3%A1ria&sll=-11.867351,-50.449219&sspn=112.365436,158.027344&ie=UTF8&hq=&hnear=Av.+Jorn.+An%C3%ADbal+Fernandes+-+Cidade+Universit%C3%A1ria,+Recife+-+Pernambuco,+50740-560&ll=-8.055383,-34.95077&spn=0.008636,0.009645&z=14&output=embed" marginwidth="0" marginheight="0"> … </iframe>
+		</div>
+		<div id="baixo">
+			<p class="nomecima">Centro Integrado de Tecnologia da Informação</p>
+			<p class="nomebaixo">Cidade Universitária - Recife-PE</p>
+			<p class="nomebaixo">+55 81 2126 8430 r 4764 &emsp; contato@citi.org.br</p>
+		</div>
+	</div>
+
